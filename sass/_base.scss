@@ -1,6 +1,13 @@
 // COLOR VARIABLES
 $color-primary: #fff;
 
+$color-white: #fff;
+$color-grey: #666;
+$color-black: #000;
+$color-darkgrey: #333;
+$color-green: #28a745;
+$color-red: #dc3545;
+
 // FONT VARIABLES
 $font-primary: 'Segoe UI',
 sans-serif;
@@ -119,6 +126,8 @@ html {
 body {
     font-family: $font-primary;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -148,4 +157,14 @@ a {
 .container,
 .container-fluid {
     padding: 0;
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
 }
